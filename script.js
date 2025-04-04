@@ -35,6 +35,7 @@ const process = () => {
         isvalid = false;
     } else {
         namein.innerHTML = "";
+        name.style.borderColor = "#ccc";
     }
 
     if (userval === '') {
@@ -43,6 +44,7 @@ const process = () => {
         isvalid = false;
     } else {
         userin.innerHTML = "";
+        user.style.borderColor = "#ccc";
     }
 
     if (emailval === '') {
@@ -51,6 +53,7 @@ const process = () => {
         isvalid = false;
     } else {
         emailin.innerHTML = "";
+        email.style.borderColor = "#ccc";
     }
 
     if (phoneval === '') {
@@ -59,6 +62,7 @@ const process = () => {
         isvalid = false;
     } else {
         phonein.innerHTML = "";
+        phone.style.borderColor = "#ccc";
     }
 
     if (passval === '') {
@@ -67,6 +71,7 @@ const process = () => {
         isvalid = false;
     } else {
         passin.innerHTML = "";
+        pass.style.borderColor = "#ccc";
     }
 
     if (conpassval === '') {
@@ -75,6 +80,7 @@ const process = () => {
         isvalid = false;
     } else {
         conpassin.innerHTML = "";
+        ConPass.style.borderColor = "#ccc";
     }
 
     if (passval !== conpassval) {
@@ -82,13 +88,6 @@ const process = () => {
         pass.style.borderColor = "#fa6666";
         conpassin.innerHTML = "Confirm password does not match";
         isvalid = false;
-    }
-
-    if (!gender) { 
-        genderin.innerHTML = "Please select a gender.";
-        isvalid = false;
-    } else {
-        genderin.innerHTML = "";
     }
 
     if (!check.checked) { 
